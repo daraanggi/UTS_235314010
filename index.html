@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>UTS JavaScript - Dara Anggi Puspa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav-tabs" data-bs-offset="50" tabindex="0">
+
+    <!-- Navbar Tabs -->
+    <ul class="nav nav-tabs text-white" id="nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#beranda">Beranda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tentang">Tentang</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#pendidikan">Pendidikan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#kisahku">Kisahku</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tugas">Tugas</a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content p-4">
+        <!-- Beranda -->
+        <div class="tab-pane fade show active" id="beranda" role="tabpanel">
+            <div class="content-wrapper text-center mt-4">
+                <h2>Hello, Semua ^.^ </h2>
+                <img src="dara.png" alt="Foto Dara" class="img-thumbnail mt-3" width="150">
+                <h4 class="mt-3">Dara Anggi Puspa</h4>
+                <p>235314010</p>
+            </div>
+        </div>
+
+        <!-- Tentang -->
+        <div class="tab-pane fade" id="tentang" role="tabpanel">
+            <div class="content-wrapper">
+                <div class="row mt-4 text-center">
+                    <div class="col-md-6">
+                        <p>Saya adalah mahasiswa Informatika yang antusias mempelajari web development dan data science. Saya suka membangun proyek dan berkolaborasi dalam tim.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Target saya adalah menjadi full-stack developer dan bisa memberi kontribusi melalui teknologi yang berdampak. Saat ini, saya sedang belajar Bootstrap, JS, dan analisis data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pendidikan -->
+        <div class="tab-pane fade" id="pendidikan" role="tabpanel">
+            <div class="content-wrapper">
+                <h4 class="mt-4">Riwayat Pendidikan</h4>
+                <table class="table table-bordered mt-3">
+                    <thead class="thead-custom">
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Nama Sekolah</th>
+                            <th>Alamat Sekolah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2011 - 2017</td>
+                            <td>SDN 57/1 Muara Tembesi</td>
+                            <td>Jl. Lintas Jambi - Ma. Bungo</td>
+                        </tr>
+                        <tr>
+                            <td>2017 - 2020</td>
+                            <td>SMPN 6 Batanghari</td>
+                            <td>Jl. Sungai Abang</td>
+                        </tr>
+                        <tr>
+                            <td>2020 - 2023</td>
+                            <td>SMAN 1 Batanghari</td>
+                            <td>Jl. Perumnas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Kisahku -->
+        <div class="tab-pane fade" id="kisahku" role="tabpanel">
+             <div class="content-wrapper">
+                <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="teman_1.png" class="card-img-top" alt="Keluarga">
+                            <div class="card-body">
+                                <h5 class="card-title">Keluarga</h5>
+                                <p class="card-text">Momen bersama keluarga tercinta yang selalu mendukung.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="teman_2.png" class="card-img-top" alt="Teman">
+                            <div class="card-body">
+                                <h5 class="card-title">Teman</h5>
+                                <p class="card-text">Kenangan bersama teman-teman terbaik selama sekolah dan kuliah.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="teman_3.png" class="card-img-top" alt="Liburan">
+                            <div class="card-body">
+                                <h5 class="card-title">Liburan</h5>
+                                <p class="card-text">Serunya jalan-jalan ke pantai dan alam bersama sahabat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="teman_4.png" class="card-img-top" alt="Wisuda">
+                            <div class="card-body">
+                                <h5 class="card-title">Wisuda</h5>
+                                <p class="card-text">Momen kelulusan yang penuh kebanggaan dan haru bersama teman.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        <!-- Tugas -->
+        <div class="tab-pane fade" id="tugas" role="tabpanel">
+            <div class="content-wrapper">
+                <h4 class="mt-4">Form Pilihan Hobi</h4>
+                <form id="formHobi" class="mb-3">
+                    <div class="mb-3">
+                        <label for="namaDepan" class="form-label">Nama Depan</label>
+                        <input type="text" class="form-control" id="namaDepan" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="namaBelakang" class="form-label">Nama Belakang</label>
+                        <input type="text" class="form-control" id="namaBelakang" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="jumlahHobi" class="form-label">Jumlah Pilihan Hobi</label>
+                        <input type="number" class="form-control" id="jumlahHobi" min="1" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="generateHobiInputs()">Oke</button>
+                </form>
+
+                <div id="hobiInputs" class="mb-3"></div>
+                <div id="hobiCheckboxes" class="mb-3"></div>
+                <div id="hasilOutput" class="alert alert-success d-none"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
