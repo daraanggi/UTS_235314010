@@ -5,64 +5,96 @@
     <title>UTS JavaScript - Dara Anggi Puspa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CDN -->
+    <!-- Link untuk mengimpor Bootstrap CSS dan Font Awesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Link untuk file CSS kustom -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#nav-tabs" data-bs-offset="50" tabindex="0">
 
-    <!-- Navbar Tabs -->
-    <ul class="nav nav-tabs text-white" id="nav-tabs">
-        <li class="nav-item">
+    <!-- Navbar Tabs: Membuat menu navigasi dengan tab untuk halaman utama -->
+    <div class="container-fluid p-0">
+        <ul class="nav nav-tabs justify-content-between text-white" id="nav-tabs">
+        <li class="nav-item flex-fill text-center">
             <a class="nav-link active" data-bs-toggle="tab" href="#beranda">Beranda</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item flex-fill text-center">
             <a class="nav-link" data-bs-toggle="tab" href="#tentang">Tentang</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item flex-fill text-center">
             <a class="nav-link" data-bs-toggle="tab" href="#pendidikan">Pendidikan</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item flex-fill text-center">
             <a class="nav-link" data-bs-toggle="tab" href="#kisahku">Kisahku</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item flex-fill text-center">
             <a class="nav-link" data-bs-toggle="tab" href="#tugas">Tugas</a>
         </li>
-    </ul>
+        </ul>
+    </div>
 
-    <!-- Tab Content -->
+    <!-- Tab Content: Bagian konten yang berubah sesuai tab yang dipilih -->
     <div class="tab-content p-4">
-        <!-- Beranda -->
+        <!-- Tab Beranda -->
         <div class="tab-pane fade show active" id="beranda" role="tabpanel">
             <div class="content-wrapper text-center mt-4">
-                <h2>Hello, Semua ^.^ </h2>
-                <img src="dara.png" alt="Foto Dara" class="img-thumbnail mt-3" width="150">
-                <h4 class="mt-3">Dara Anggi Puspa</h4>
+                <h3>Setiap orang punya cerita, dan ini bagian ceritaku.</h3>
+                <!-- Gambar dan Tooltip -->
+                    <img src="dara.png" alt="Foto Dara" class="img-thumbnail mt-3" width="150" data-bs-toggle="tooltip" title="Foto Dara kelulusan SMA">
+                    <h4 class="mt-3">Dara Anggi Puspa</h4>
                 <p>235314010</p>
+
+                 <!-- footer dengan tautan media sosial -->
+                 <div class="footer">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/dapuspaa/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="https://github.com/daraanggi" target="_blank">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>            
             </div>
         </div>
 
-        <!-- Tentang -->
+        <!-- Tab Tentang -->
         <div class="tab-pane fade" id="tentang" role="tabpanel">
             <div class="content-wrapper">
                 <div class="row mt-4 text-center">
                     <div class="col-md-6">
-                        <p>Saya adalah mahasiswa Informatika yang antusias mempelajari web development dan data science. Saya suka membangun proyek dan berkolaborasi dalam tim.</p>
-                    </div>
+                        <p align="justify">
+                            Halo, perkenalkan saya <b>Dara</b>, mahasiswa <b>Informatika</b> angkatan 2023 di <u>Universitas Sanata Dharma</u>. 
+                            Selama perkuliahan, saya berusaha aktif dalam berbagai organisasi dan kegiatan di program studi saya. 
+                            Pada semester dua, saya bergabung dengan <b>Himpunan Mahasiswa Informatika</b> sebagai anggota divisi Minat Bakat biro Pendidikan. 
+                            Selain itu, saya juga terlibat dalam kepanitiaan <b>Pekan Olahraga dan Seni Informatika (PORSI)</b>, khususnya di divisi pendaftaran. 
+                            Berorganisasi dan mengikuti berbagai event menjadi pengalaman yang berharga bagi saya, karena tidak hanya menyenangkan, 
+                            tetapi juga memperluas wawasan, membangun relasi, dan mengisi waktu dengan hal yang bermanfaat. 
+                            Saat ini, saya ingin lebih fokus dalam mengembangkan keterampilan pemrograman untuk memperdalam pemahaman 
+                            dan meningkatkan kemampuan saya di bidang ini.
+                        </p>                  
+                      </div>
                     <div class="col-md-6">
-                        <p>Target saya adalah menjadi full-stack developer dan bisa memberi kontribusi melalui teknologi yang berdampak. Saat ini, saya sedang belajar Bootstrap, JS, dan analisis data.</p>
-                    </div>
+                        <p align="justify">
+                            Saya juga memiliki hobi mendengarkan musik. Musik bagi saya bukan hanya sekedar hiburan, tetapi juga menjadi bagian dari keseharian yang selalu menemani berbagai aktivitas. 
+                            Saya mendengarkan musik hampir setiap saat ketika sedang bersantai, mengerjakan tugas, atau bahkan saat merasa bosan. Musik dapat membantu saya tetap fokus, meningkatkan suasana hati, 
+                            dan memberikan kenyamanan di tengah kesibukan perkuliahan. Salah satu band favorit saya adalah <b><i>LANY</i></b>. Lagu-lagu mereka memiliki melodi yang menenangkan dan lirik yang sering kali relatable dengan berbagai situasi kehidupan. 
+                            Musik mereka sering menjadi teman setia saya, baik saat mengerjakan tugas yang membutuhkan konsentrasi tinggi maupun ketika saya ingin melepas penat setelah seharian beraktivitas. 
+                            Ada sesuatu dalam melodi dan lirik LANY yang selalu membuat saya merasa lebih rileks dan termotivasi.                    
+                        </p>               
+                </div>
                 </div>
             </div>
         </div>
 
-        <!-- Pendidikan -->
+        <!-- Tab Pendidikan -->
         <div class="tab-pane fade" id="pendidikan" role="tabpanel">
             <div class="content-wrapper">
-                <h4 class="mt-4">Riwayat Pendidikan</h4>
+                <h4 class="mt-4" style="text-align: center;">Riwayat Pendidikan</h4>
+                <!-- Tabel riwayat pendidikan -->
                 <table class="table table-bordered mt-3">
                     <thead class="thead-custom">
                         <tr>
@@ -75,71 +107,85 @@
                         <tr>
                             <td>2011 - 2017</td>
                             <td>SDN 57/1 Muara Tembesi</td>
-                            <td>Jl. Lintas Jambi - Ma. Bungo</td>
+                            <td>Muara Tembesi, Batang Hari, Jambi</td>
                         </tr>
                         <tr>
                             <td>2017 - 2020</td>
                             <td>SMPN 6 Batanghari</td>
-                            <td>Jl. Sungai Abang</td>
+                            <td>Muara Tembesi, Batang Hari, Jambi</td>
                         </tr>
                         <tr>
                             <td>2020 - 2023</td>
                             <td>SMAN 1 Batanghari</td>
-                            <td>Jl. Perumnas</td>
+                            <td>Muara Bulian, Batang Hari, Jambi</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
-        <!-- Kisahku -->
+    
+        <!-- Tab Kisahku -->
         <div class="tab-pane fade" id="kisahku" role="tabpanel">
-             <div class="content-wrapper">
-                <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col">
+            <div class="content-wrapper">
+                <h4 class="mt-4" style="text-align: center;">Kisah-Kisah Mengesankan dalam Hidupku</h4>
+                <!-- Card galeri foto kenangan -->
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="teman_1.png" class="card-img-top" alt="Keluarga">
-                            <div class="card-body">
+                            <img src="keluarga.png" class="card-img-top" alt="Keluarga" data-bs-toggle="tooltip" title="Momen Natal bersama keluarga">
+                            <div class="card-body text-center">
                                 <h5 class="card-title">Keluarga</h5>
-                                <p class="card-text">Momen bersama keluarga tercinta yang selalu mendukung.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="teman_2.png" class="card-img-top" alt="Teman">
-                            <div class="card-body">
-                                <h5 class="card-title">Teman</h5>
-                                <p class="card-text">Kenangan bersama teman-teman terbaik selama sekolah dan kuliah.</p>
+                            <img src="teman_1.png" class="card-img-top" alt="Teman_1" data-bs-toggle="tooltip" title="Hangout di Kaliurang">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teman Kuliah</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="teman_3.png" class="card-img-top" alt="Liburan">
-                            <div class="card-body">
-                                <h5 class="card-title">Liburan</h5>
-                                <p class="card-text">Serunya jalan-jalan ke pantai dan alam bersama sahabat.</p>
+                            <img src="teman_2.png" class="card-img-top" alt="Teman_2" data-bs-toggle="tooltip" title="Natal bersama sahabat kecil">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teman Kecil</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="teman_4.png" class="card-img-top" alt="Wisuda">
-                            <div class="card-body">
-                                <h5 class="card-title">Wisuda</h5>
-                                <p class="card-text">Momen kelulusan yang penuh kebanggaan dan haru bersama teman.</p>
+                            <img src="teman_3.png" class="card-img-top" alt="Teman_3" data-bs-toggle="tooltip" title="Kelulusan teman SMA di STPN">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teman SMA</h5>
                             </div>
                         </div>
                     </div>
-                </div>            
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="teman_4.png" class="card-img-top" alt="Teman_4" data-bs-toggle="tooltip" title="Arak-arakan wisuda">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teman Kuliah</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="teman_5.png" class="card-img-top" alt="Teman_5" data-bs-toggle="tooltip" title="ITDays bareng teman">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teman Kuliah</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Tugas -->
+        </div>         
+                
+        <!-- Tab Tugas -->
         <div class="tab-pane fade" id="tugas" role="tabpanel">
             <div class="content-wrapper">
-                <h4 class="mt-4">Form Pilihan Hobi</h4>
+                <h4 class="mt-4" style="text-align: center;">Form Pilihan Hobi</h4>
                 <form id="formHobi" class="mb-3">
                     <div class="mb-3">
                         <label for="namaDepan" class="form-label">Nama Depan</label>
@@ -157,7 +203,7 @@
                         <label for="jumlahHobi" class="form-label">Jumlah Pilihan Hobi</label>
                         <input type="number" class="form-control" id="jumlahHobi" min="1" required>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="generateHobiInputs()">Oke</button>
+                    <button type="button" class="btn btn-danger" onclick="generateHobiInputs()">Oke</button>
                 </form>
 
                 <div id="hobiInputs" class="mb-3"></div>
@@ -166,8 +212,8 @@
             </div>
         </div>
     </div>
-
-    <!-- JS -->
+    
+    <!-- Mengimpor file JS kustom -->
     <script src="script.js"></script>
 </body>
 </html>
